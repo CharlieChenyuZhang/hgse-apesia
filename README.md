@@ -1,2 +1,1 @@
-# hgse-apesia
-The site for Harvard GSE APESIA student org
+This is the webstie designed for HGSE APESIA.
