@@ -8,7 +8,7 @@ import Speakers from "./components/Speakers";
 import Schedule from "./components/Schedule";
 import Alumni from "./components/Alumni";
 import Events from "./components/Events";
-import Sponsor from "./components/Sponsor";
+import Sponsors from "./components/Sponsors";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
@@ -39,7 +39,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/sponsor",
-    element: <Sponsor />,
+    element: <Sponsors />,
   },
   {
     path: "/",
