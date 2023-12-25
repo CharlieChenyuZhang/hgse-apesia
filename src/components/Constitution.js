@@ -2,8 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import ResponsiveApBar from "./ResponsiveAppBar";
 import apesiaLogo from "../assets/apesia-logo.png";
-import { Grid, Card, CardMedia, CardContent, Typography } from "@mui/material";
-import Manabu from "../assets/teams/Manabu.jpg";
+import apesiaConstitiont from "../assets/apesia_constitution.pdf";
 
 const BREAK_POINT = "1200px";
 
@@ -38,30 +37,32 @@ const BottomTextContainer = styled.div`
   text-align: center;
 `;
 
-const teamMembers = [
-  {
-    id: 1,
-    name: "John Doe",
-    title: "Developer",
-    photo: Manabu,
-  },
-  {
-    id: 2,
-    name: "Jane Smith",
-    title: "Designer",
-    photo: Manabu,
-  },
-];
-
 const ContentContainer = styled.div`
   margin-top: 83px;
+  margin-left: 60px;
+`;
+
+const PageTitle = styled.div`
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 5rem 0;
+`;
+
+const PdfContainer = styled.div`
+  margin: 0 45px 5rem 45px;
 `;
 
 const TeamPage = () => {
   return (
     <MainContainer>
       <ResponsiveApBar />
-      <ContentContainer>Constitution Coming soon...</ContentContainer>
+      <ContentContainer>
+        <PageTitle>Our Constitution</PageTitle>
+      </ContentContainer>
+      <PdfContainer>
+        <iframe src={apesiaConstitiont} width="100%" height="800px" />
+      </PdfContainer>
+
       <Banner>
         We build education diversity, equity, and inclusion for all learners
       </Banner>

@@ -55,13 +55,23 @@ const teamMembers = [
 
 const ContentContainer = styled.div`
   margin-top: 83px;
+  margin-left: 60px;
+`;
+
+const PageTitle = styled.div`
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 5rem 0;
 `;
 
 const TeamPage = () => {
   return (
     <MainContainer>
       <ResponsiveApBar />
-      <ContentContainer>Schedule Coming soon...</ContentContainer>
+      <ContentContainer>
+        <PageTitle>Schedule</PageTitle>
+        coming soon...
+      </ContentContainer>
       <Banner>
         We build education diversity, equity, and inclusion for all learners
       </Banner>

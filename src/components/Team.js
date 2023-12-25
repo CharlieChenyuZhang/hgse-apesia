@@ -55,14 +55,23 @@ const teamMembers = [
 
 const ContentContainer = styled.div`
   margin-top: 83px;
+  margin-left: 60px;
+`;
+
+const PageTitle = styled.div`
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 5rem 0;
 `;
 
 const TeamPage = () => {
   return (
     <MainContainer>
       <ResponsiveApBar />
-      <ContentContainer>Teams Coming soon...</ContentContainer>
-      {/* <ContentContainer>
+      <ContentContainer>
+        <PageTitle>Meet the Team</PageTitle>
+      </ContentContainer>
+      <ContentContainer>
         <Grid container spacing={2}>
           {teamMembers.map((member) => (
             <Grid item xs={12} sm={6} md={4} key={member.id}>
@@ -86,7 +95,7 @@ const TeamPage = () => {
             </Grid>
           ))}
         </Grid>
-      </ContentContainer> */}
+      </ContentContainer>
       <Banner>
         We build education diversity, equity, and inclusion for all learners
       </Banner>
