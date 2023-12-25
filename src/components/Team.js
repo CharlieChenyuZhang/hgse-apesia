@@ -61,7 +61,8 @@ const TeamPage = () => {
   return (
     <MainContainer>
       <ResponsiveApBar />
-      <ContentContainer>
+      <ContentContainer>Teams Coming soon...</ContentContainer>
+      {/* <ContentContainer>
         <Grid container spacing={2}>
           {teamMembers.map((member) => (
             <Grid item xs={12} sm={6} md={4} key={member.id}>
@@ -85,7 +86,7 @@ const TeamPage = () => {
             </Grid>
           ))}
         </Grid>
-      </ContentContainer>
+      </ContentContainer> */}
       <Banner>
         We build education diversity, equity, and inclusion for all learners
       </Banner>
