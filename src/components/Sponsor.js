@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import ResponsiveApBar from "./ResponsiveAppBar";
 import apesiaLogo from "../assets/apesia-logo.png";
-import apesiaConstitiont from "../assets/apesia_constitution.pdf";
 
 const BREAK_POINT = "1200px";
 
@@ -49,21 +48,14 @@ const PageTitle = styled.div`
   padding: 5rem 0;
 `;
 
-const PdfContainer = styled.div`
-  margin: 0 45px 5rem 45px;
-`;
-
-const TeamPage = () => {
+const Sponsor = () => {
   return (
     <MainContainer>
       <ResponsiveApBar />
       <ContentContainer>
-        <PageTitle>Our Constitution</PageTitle>
+        <PageTitle>Sponsor</PageTitle>
+        coming soon...
       </ContentContainer>
-      <PdfContainer>
-        <iframe src={apesiaConstitiont} width="100%" height="800px" />
-      </PdfContainer>
-
       <Banner>
         We build education diversity, equity, and inclusion for all learners
       </Banner>
@@ -82,4 +74,4 @@ const TeamPage = () => {
   );
 };
 
-export default TeamPage;
+export default Sponsor;

@@ -6,20 +6,20 @@ import Team from "./components/Team";
 import Constitution from "./components/Constitution";
 import Speakers from "./components/Speakers";
 import Schedule from "./components/Schedule";
+import Alumni from "./components/Alumni";
+import Events from "./components/Events";
+import Sponsor from "./components/Sponsor";
+
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const router = createBrowserRouter([
-  {
-    path: "/team",
-    element: <Team />,
-  },
   {
     path: "/speakers",
     element: <Speakers />,
   },
   {
     path: "/team",
-    element: <Home />,
+    element: <Team />,
   },
   {
     path: "/schedule",
@@ -28,6 +28,18 @@ const router = createBrowserRouter([
   {
     path: "/constitution",
     element: <Constitution />,
+  },
+  {
+    path: "/alumni",
+    element: <Alumni />,
+  },
+  {
+    path: "/events",
+    element: <Events />,
+  },
+  {
+    path: "/sponsor",
+    element: <Sponsor />,
   },
   {
     path: "/",

@@ -10,7 +10,16 @@ import MenuItem from "@mui/material/MenuItem";
 import apesiaLogo from "../assets/apesia-logo.png";
 import { useNavigate } from "react-router-dom";
 
-const pages = ["Constitution", "SPEAKERS", "SCHEDULE", "TEAM"];
+const pages = [
+  "Home",
+  "Constitution",
+  // "SPEAKERS",
+  // "SCHEDULE",
+  "TEAM",
+  "Alumni",
+  "Events",
+  // "sponsor",
+];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 function ResponsiveAppBar() {
@@ -51,7 +60,13 @@ function ResponsiveAppBar() {
             {pages.map((page) => (
               <Button
                 key={page}
-                onClick={() => navigate(`/${page.toLowerCase()}`)}
+                onClick={() => {
+                  if (page === "Home") {
+                    navigate(`/`);
+                    return;
+                  }
+                  navigate(`/${page.toLowerCase()}`);
+                }}
                 sx={{ my: 2, color: "white", display: "block" }}
               >
                 {page}
