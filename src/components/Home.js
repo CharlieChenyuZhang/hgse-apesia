@@ -2,8 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import ResponsiveApBar from "./ResponsiveAppBar";
 import Typography from "@mui/material/Typography";
-import hgseBuilding from "../assets/hgse-building.jpeg";
-import harvardBuilding from "../assets/harvard-building.jpeg";
+import hgseBuilding from "../assets/hgse-building.png";
+import harvardBuilding from "../assets/harvard-building.png";
 import apesiaLogo from "../assets/apesia-logo.png";
 
 const BREAK_POINT = "1200px";
