@@ -61,31 +61,7 @@ const TeamPage = () => {
   return (
     <MainContainer>
       <ResponsiveApBar />
-      <ContentContainer>
-        <Grid container spacing={2}>
-          {teamMembers.map((member) => (
-            <Grid item xs={12} sm={6} md={4} key={member.id}>
-              <Card>
-                <CardMedia
-                  component="img"
-                  height="200px"
-                  width="200px"
-                  image={member.photo}
-                  alt={member.name}
-                />
-                <CardContent>
-                  <Typography gutterBottom variant="h5" component="div">
-                    {member.name}
-                  </Typography>
-                  <Typography variant="body2" color="text.secondary">
-                    {member.title}
-                  </Typography>
-                </CardContent>
-              </Card>
-            </Grid>
-          ))}
-        </Grid>
-      </ContentContainer>
+      <ContentContainer>Speakers Coming soon...</ContentContainer>
       <Banner>
         We build education diversity, equity, and inclusion for all learners
       </Banner>

@@ -3,10 +3,10 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import Home from "./components/Home";
 import Team from "./components/Team";
-// import reportWebVitals from "./reportWebVitals";
+import Constitution from "./components/Constitution";
+import Speakers from "./components/Speakers";
+import Schedule from "./components/Schedule";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-// import * as dotenv from "dotenv"; // see https://github.com/motdotla/dotenv#how-do-i-use-dotenv-with-import
-// dotenv.config();
 
 const router = createBrowserRouter([
   {
@@ -15,7 +15,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/speakers",
-    element: <Home />,
+    element: <Speakers />,
   },
   {
     path: "/team",
@@ -23,11 +23,11 @@ const router = createBrowserRouter([
   },
   {
     path: "/schedule",
-    element: <Home />,
+    element: <Schedule />,
   },
   {
     path: "/constitution",
-    element: <Home />,
+    element: <Constitution />,
   },
   {
     path: "/",

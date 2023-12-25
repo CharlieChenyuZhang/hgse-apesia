@@ -121,7 +121,7 @@ const BottomTextContainer = styled.div`
   text-align: center;
 `;
 
-export default function TextToImage() {
+export default function Home() {
   return (
     <MainContainer>
       <ResponsiveApBar />
