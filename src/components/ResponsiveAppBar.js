@@ -10,14 +10,15 @@ import MenuItem from "@mui/material/MenuItem";
 import apesiaLogo from "../assets/apesia-logo.png";
 import { useNavigate } from "react-router-dom";
 
+// NOTE: for the commented out tabs, the compoennts are ready
 const pages = [
   "Home",
-  "Constitution",
   // "SPEAKERS",
   // "SCHEDULE",
   "TEAM",
   "Alumni",
-  "Events",
+  "Constitution",
+  // "Events",
   // "sponsor",
 ];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
