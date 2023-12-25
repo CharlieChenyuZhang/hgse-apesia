@@ -49,8 +49,8 @@ const PageTitle = styled.div`
   padding: 5rem 0;
 `;
 
-const PdfContainer = styled.div`
-  margin: 0 45px 5rem 45px;
+const PdfLinkContainer = styled.div`
+  margin-bottom: 5rem;
 `;
 
 const TeamPage = () => {
@@ -59,10 +59,13 @@ const TeamPage = () => {
       <ResponsiveApBar />
       <ContentContainer>
         <PageTitle>Our Constitution</PageTitle>
+
+        <PdfLinkContainer>
+          <a href={apesiaConstitiont} target="_blank" rel="noopener noreferrer">
+            [Oct. 26. 2022] [Current] HGSE APESIA Constitution
+          </a>
+        </PdfLinkContainer>
       </ContentContainer>
-      <PdfContainer>
-        <iframe src={apesiaConstitiont} width="100%" height="800px" />
-      </PdfContainer>
 
       <Banner>
         We build education diversity, equity, and inclusion for all learners
