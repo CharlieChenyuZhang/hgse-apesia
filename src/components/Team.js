@@ -27,6 +27,16 @@ import member12 from "../assets/teams/12.png";
 import member13 from "../assets/teams/13.png";
 import member14 from "../assets/teams/14.png";
 import member15 from "../assets/teams/15.png";
+import advisor0 from "../assets/advisors/0.png";
+import advisor1 from "../assets/advisors/1.png";
+import advisor2 from "../assets/advisors/2.png";
+import advisor3 from "../assets/advisors/3.png";
+import advisor4 from "../assets/advisors/4.png";
+import advisor5 from "../assets/advisors/5.png";
+import advisor6 from "../assets/advisors/6.png";
+import advisor7 from "../assets/advisors/7.png";
+import advisor8 from "../assets/advisors/8.png";
+import advisor9 from "../assets/advisors/9.png";
 
 const BREAK_POINT = "1200px";
 
@@ -60,6 +70,105 @@ const BottomTextContainer = styled.div`
   margin-bottom: 100px;
   text-align: center;
 `;
+const advisoryMembers = [
+  {
+    name: "Prof. Prashant Loyalka",
+    photo: advisor0,
+    description: `
+    <ul>
+    <li>Associate Professor at the Graduate School of Education at Stanford University</li>
+    <li>Senior Fellow at the Freeman Spogli Institute for International Studies at Stanford University</li>
+    </ul>
+    `,
+  },
+  {
+    name: "Prof. Hatch Thomas",
+    photo: advisor1,
+    description: `
+    <ul>
+    <li>Professor of Education at Columbia University </li>
+    <li>Director of the National Center for Restructuring Education, Schools, and Teaching (NCREST)</li>
+    </ul>
+    `,
+  },
+  {
+    name: "Prof. Jessica Peng ",
+    photo: advisor2,
+    description: `
+    <ul>
+    <li>Dean's Global Education Postdoctoral Fellow at Harvard University </li>
+    <li>Cultural and linguistic anthropologist </li>
+    </ul>
+    `,
+  },
+  {
+    name: "Mr. Douglas Clayton",
+    photo: advisor3,
+    description: `
+    <ul>
+    <li>Board Member at University of Pennsylvania</li>
+    <li>Board Member at Luxembourg American Camber of Commerce</li>
+    </ul>
+    `,
+  },
+  {
+    name: "Prof. Kunal Johar",
+    photo: advisor4,
+    description: `
+    <ul>
+    <li>Former US Department of Defense Technical Scientist</li>
+    <li>Professor of Computer Engineering and Computational Molecular Biology at George Washington University</li>
+    <li>Founder and Chief Technology Officer of Openwater</li>
+    </ul>
+    `,
+  },
+  {
+    name: "Prof. Zhou Yu",
+    photo: advisor5,
+    description: `
+    <ul>
+    <li>Associate Professor at Columbia University </li>
+    <li>Co-Founder at Articulate.AI</li>
+    </ul>
+    `,
+  },
+  {
+    name: "Prof. Michael Thomas",
+    photo: advisor6,
+    description: `
+    Professor at University of California, Riverside He has developed and customized educational solutions for multinational organizations such as the US Department of Homeland Security, the Ministry of Commerce of the People's Republic of China
+    `,
+  },
+  {
+    name: "Ms. Serene Wang",
+    photo: advisor7,
+    description: `
+    National Chinese American Youth Federation, Ten Outstanding Youths of the US-China Public Diplomacy Association Former Columbia University and New York University Lecturer
+    `,
+  },
+  {
+    name: "Mr. Charles Liu",
+    photo: advisor8,
+    description: `
+    <ul>
+    <li>President of Harvard Venture Club </li>
+    <li>H29 Capital CEO & Cofounder</li>
+    <li>2022 Forbes 30U30</li>
+    </ul>
+    `,
+  },
+  {
+    name: "Ms. Dou Dou",
+    photo: advisor9,
+    description: `
+    <ul>
+    <li>Founder and Chairperson of the Asian Society for Social and Emotional Learning at the Harvard Graduate School of Education</li>
+    <li>CPCC Certified International Leadership Coach</li>
+    <li>Guest Speaker at the 2019 Harvard China Education Forum</li>
+    </ul>
+    `,
+  },
+];
 
 const teamMembers = [
   {
@@ -229,7 +338,7 @@ const CardMediaComponent = styled(CardMedia)`
   height: 350px;
 `;
 
-const TeamMemberModal = ({ member, open, handleClose }) => {
+const TeamMemberModal = ({ member, open, handleClose, isAdvisory = false }) => {
   if (!member) return null;
 
   return (
@@ -239,7 +348,7 @@ const TeamMemberModal = ({ member, open, handleClose }) => {
         <Typography variant="h6" component="h2">
           {member.name}
         </Typography>
-        <Typography sx={{ mt: 2 }}>{member.title}</Typography>
+        {!isAdvisory && <Typography sx={{ mt: 2 }}>{member.title}</Typography>}
         <Typography
           sx={{ mt: 2 }}
           dangerouslySetInnerHTML={{ __html: member.description }}
@@ -294,6 +403,34 @@ const TeamPage = () => {
           member={selectedMember}
           open={modalOpen}
           handleClose={handleModalClose}
+        />
+      </ContentContainer>
+
+      <ContentContainer>
+        <PageTitle>Advisors</PageTitle>
+        <Grid container spacing={5}>
+          {advisoryMembers.map((member, idx) => (
+            <Grid item xs={12} sm={6} md={4} lg={3} xl={2} key={idx}>
+              <CardHover onClick={() => handleCardClick(member)}>
+                <CardMediaComponent
+                  component="img"
+                  image={member.photo}
+                  alt={member.name}
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="div">
+                    {member.name}
+                  </Typography>
+                </CardContent>
+              </CardHover>
+            </Grid>
+          ))}
+        </Grid>
+        <TeamMemberModal
+          member={selectedMember}
+          open={modalOpen}
+          handleClose={handleModalClose}
+          isAdvisory={true}
         />
       </ContentContainer>
 
