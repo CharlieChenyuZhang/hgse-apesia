@@ -11,8 +11,22 @@ import {
   Box,
   Modal,
 } from "@mui/material";
-import Manabu from "../assets/teams/0.jpg";
-import Evelyn from "../assets/teams/1.jpg";
+import member0 from "../assets/teams/0.png";
+import member1 from "../assets/teams/1.png";
+import member2 from "../assets/teams/2.png";
+import member3 from "../assets/teams/3.png";
+import member4 from "../assets/teams/4.png";
+import member5 from "../assets/teams/5.png";
+import member6 from "../assets/teams/6.png";
+import member7 from "../assets/teams/7.png";
+import member8 from "../assets/teams/8.png";
+import member9 from "../assets/teams/9.png";
+import member10 from "../assets/teams/10.png";
+import member11 from "../assets/teams/11.png";
+import member12 from "../assets/teams/12.png";
+import member13 from "../assets/teams/13.png";
+import member14 from "../assets/teams/14.png";
+import member15 from "../assets/teams/15.png";
 
 const BREAK_POINT = "1200px";
 
@@ -52,97 +66,97 @@ const teamMembers = [
     id: 1,
     name: "Manabu Nagaoka Doe",
     title: "EVP",
-    photo: Manabu,
+    photo: member0,
   },
   {
     id: 2,
     name: "Evelyn Li",
     title: "EVP",
-    photo: Evelyn,
+    photo: member1,
   },
   {
     id: 3,
     name: "Evelyn Li",
     title: "EVP",
-    photo: Evelyn,
+    photo: member2,
   },
   {
     id: 4,
     name: "Evelyn Li",
     title: "EVP",
-    photo: Evelyn,
+    photo: member3,
   },
   {
     id: 5,
     name: "Evelyn Li",
     title: "EVP",
-    photo: Evelyn,
+    photo: member4,
   },
   {
     id: 6,
     name: "Evelyn Li",
     title: "EVP",
-    photo: Evelyn,
+    photo: member5,
   },
   {
     id: 7,
     name: "Evelyn Li",
     title: "EVP",
-    photo: Evelyn,
+    photo: member6,
   },
   {
     id: 8,
     name: "Evelyn Li",
     title: "EVP",
-    photo: Evelyn,
+    photo: member7,
   },
   {
     id: 9,
     name: "Evelyn Li",
     title: "EVP",
-    photo: Evelyn,
+    photo: member8,
   },
   {
     id: 10,
     name: "Evelyn Li",
     title: "EVP",
-    photo: Evelyn,
+    photo: member9,
   },
   {
     id: 11,
     name: "Manabu Nagaoka Doe",
     title: "EVP",
-    photo: Manabu,
+    photo: member10,
   },
   {
     id: 12,
     name: "Evelyn Li",
     title: "EVP",
-    photo: Evelyn,
+    photo: member11,
   },
   {
     id: 13,
     name: "Evelyn Li",
     title: "EVP",
-    photo: Evelyn,
+    photo: member12,
   },
   {
     id: 14,
     name: "Evelyn Li",
     title: "EVP",
-    photo: Evelyn,
+    photo: member13,
   },
   {
     id: 15,
     name: "Evelyn Li",
     title: "EVP",
-    photo: Evelyn,
+    photo: member14,
   },
   {
     id: 16,
     name: "Evelyn Li",
     title: "EVP",
-    photo: Evelyn,
+    photo: member15,
   },
 ];
 
