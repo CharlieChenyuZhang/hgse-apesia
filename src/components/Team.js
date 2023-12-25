@@ -191,6 +191,10 @@ const modalStyle = {
   p: 4,
 };
 
+const CardMediaComponent = styled(CardMedia)`
+  height: 350px;
+`;
+
 const TeamMemberModal = ({ member, open, handleClose }) => {
   if (!member) return null;
 
@@ -227,13 +231,12 @@ const TeamPage = () => {
       <ResponsiveApBar />
       <ContentContainer>
         <PageTitle>Meet the Team</PageTitle>
-        <Grid container spacing={2}>
+        <Grid container spacing={5}>
           {teamMembers.map((member) => (
-            <Grid item xs={12} sm={6} md={4} key={member.id}>
+            <Grid item xs={12} sm={6} md={4} lg={3} xl={2} key={member.id}>
               <CardHover onClick={() => handleCardClick(member)}>
-                <CardMedia
+                <CardMediaComponent
                   component="img"
-                  height="200"
                   image={member.photo}
                   alt={member.name}
                 />
