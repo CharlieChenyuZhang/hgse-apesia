@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import ResponsiveApBar from "./ResponsiveAppBar";
-import apesiaLogo from "../assets/apesia-logo.png";
+import Footer from "./Footer";
 import {
   Grid,
   Card,
@@ -458,20 +458,7 @@ const TeamPage = () => {
         handleClose={handleModalClose}
       />
 
-      <Banner>
-        We build education diversity, equity, and inclusion for all learners
-      </Banner>
-      <BottomImageTextContainer>
-        <BottomImageContainer>
-          <img src={apesiaLogo} alt="APESIA logo" />
-        </BottomImageContainer>
-
-        <BottomTextContainer>
-          The Harvard Graduate School of Education and/or shield are trademarks
-          of the President and Fellows of Harvard College and are used by
-          permission of Harvard University.
-        </BottomTextContainer>
-      </BottomImageTextContainer>
+      <Footer />
     </MainContainer>
   );
 };
