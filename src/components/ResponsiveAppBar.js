@@ -18,9 +18,9 @@ const pages = [
   // "SPEAKERS",
   // "SCHEDULE",
   "TEAM",
-  "ALUMNI",
-  "CONSTITUTION",
-  // "EVENTS",
+  // "ALUMNI",
+  // "CONSTITUTION",
+  "EVENTS",
   // "SPONSORS",
 ];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];

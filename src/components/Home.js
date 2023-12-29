@@ -137,13 +137,13 @@ export default function Home() {
               textDecoration: "none",
             }}
           >
-            <span>
+            <b>
               Harvard Graduate School of Education
               <br />
               Asian Pacific Education Student International Association
               <br />
               (HGSE APESIA)
-            </span>
+            </b>
           </ResponsiveTypography>
         </Overlay>
       </ImageOverlayContainer>
@@ -201,6 +201,8 @@ export default function Home() {
           of the President and Fellows of Harvard College and are used by
           permission of Harvard University.
         </BottomTextContainer>
+
+        <BottomTextContainer>harvardgseapesia@gmail.com</BottomTextContainer>
       </BottomImageTextContainer>
     </MainContainer>
   );
