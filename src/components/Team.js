@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import ResponsiveApBar from "./ResponsiveAppBar";
 import Footer from "./Footer";
@@ -172,101 +172,49 @@ const advisoryMembers = [
 
 const teamMembers = [
   {
-    name: "Zichen Sheng",
-    title: "Founder | Internal Deputy Vice President",
-    photo: member14,
-    description: `Zichen Sheng, based in Beijing, China, is a dedicated education professional and entrepreneur. A Harvard University graduate with a Master's in Education, Zichen co-founded RDEC in 2012, a pioneering digital music education company. As the Co-founder and Shareholder, he oversees the management of direct-sale and franchised campuses, achieving significant revenue growth and implementing innovative teaching methods. He has led the expansion of RDEC to over 500 campuses nationwide, impacting over 100,000 children through innovative music education methods.`,
+    name: "Lei Wu",
+    title: "Co-President",
+    photo: member10,
+    description: `
+    <ul>
+    <li>Currently studying Educational Policy and Analysis at Harvard University.</li>
+    <li>Co-founder of Leadium AI coaching and consulting, and Goconnect, collaborating with over thirty businesses & organizations, serving 30,000+ users.</li>
+    <li>Vice President of the MIT Venture Capital Association (CHIEF).</li>
+    </ul>
+    `,
   },
   {
-    name: "Anthemius (Xiao) Li",
-    title: "Founder | President",
+    name: "Anthemius Li",
+    title: "Co-President",
     photo: member15,
     description: `
     <ul>
-    <li>Harvard Graduate School of Education</li>
-    <li>2021 Panel Speaker at Harvard China Education Symposum</li>
-    <li>​CEO of Enlight Education</li>
+    <li>Master's in Educational Leadership, Organizations, and Entrepreneurship from Harvard University.</li>
+    <li>Founder of Lingfeng Century Education Family Office.</li>
+    <li>Executive Director of the Asia-Pacific Young Entrepreneurs Council and Chair of the International Education Committee, Advisor to the Harvard Political Economy Association, Vice-Chair of the Harvard Business and Entrepreneurship Alliance, Entrepreneur-in-Residence at the Harvard Innovation Lab.</li>
     </ul>
     `,
   },
   {
     name: "Manabu Nagaoka",
-    title: "EVP",
+    title: "Executive Vice President",
     photo: member0,
-    description: `A seasoned executive with extensive management experiences in all areas of media industry including TV, Film, Music, Theater, Fashion, Advertising, Consumer Products, Theme Parks, Educational Media and Technologies. Currently, serves Sesame Workshop as VP General Manager and Executive Producer, and Head of EFL/SEL Global Business. An Ed.M candidate at Harvard.`,
-  },
-  {
-    name: "Lei Wu",
-    title: "President",
-    photo: member10,
     description: `
     <ul>
-    <li>Harvard Graduate School of Education - Education Policy and Analysis</li>
-    <li>Co-founder of Leadium (AI Leadership Coaching), Co-founder of Go connect, Cooperated with over thirty enterprises & organizations, with over 30,000 users.</li>
-    <li>Vice President of Community at MIT-Chief</li>
-    <li>Developed a gourmet & event software, former project manager in an NGO,  former data strategist in higher education, former reviewer for policy journals, and former management consultant.</li>
-    </ul>
-    `,
+    <li>Currently studying Education Design Innovation and Technology at Harvard University.</li>
+    <li>Vice President, General Manager, and Executive Producer at Sesame Street Studio, overseeing all operations in Japan, from theme parks to school and healthcare projects.</li>
+    <li>Founder of a film boutique studio and intellectual property management company specializing in international collaborative productions and joint ventures.</li>
+    </ul>`,
   },
   {
     name: "Evelyn Li",
-    title: "EVP",
+    title: "Executive Vice President",
     photo: member1,
-    description: `I'm Evelyn Li, currently pursuing a master's degree in education leadership, Organizations, and Entrepreneurship (ELOE) at the Harvard Graduate School of Education. I hold a BA in Psychology, with a minor in Business Management from Cornell University. I hold positions on the Executive Board of the HGSE Alumni Community - China (HACC) and The Chinese Education Symposium (CES). Previously, I served as the Vice President of the Cornell Chinese Students and Scholars Association (CUCSSA). My academic and professional interests center around positive psychology, social-emotional learning, and mindfulness.`,
-  },
-
-  {
-    name: "Zihan Sun",
-    title: "Marketing Chair",
-    photo: member2,
     description: `
     <ul>
-      <li>HGSE LDIT24'</li>
-      <li>Own Social Media Channel with 5 million+ views</li>
-      <li>The Coca-Cola Company Marketing Internship</li>
-      <li>Slogan: “A mysterious hole you need to explore”</li>
-    </ul>
-    `,
-  },
-  {
-    name: "William Feng",
-    title: "Internal Deputy Vice President",
-    photo: member3,
-    description: `William (Chenjunyi) Feng is a master's student in education leadership, organizations, & entrepreneurship. He has a strong background in economics, marketing, and communications, and gained experience in various creative endeavors, including participation in Chinese reality TV shows and delivering engaging bilingual stand-up comedy/improv performances. He also co-authored an educational book, reflecting his commitment to improving education for underprivileged children and higher education.`,
-  },
-  {
-    name: "Rainy Mao",
-    title: "Secretary Chair",
-    photo: member4,
-    description: `Rainy is presently undertaking her master's degree in Human Development and Education (HDE) at the Harvard Graduate School of Education. She earned her bachelor's degree with a major in psychology and a minor in educational studies at UC San Digo. With a background in early childhood education, Rainy brings two years of teaching experience to her academic pursuits. Her research studies and interests are centered around cognitive development, social-emotional learning, and multicultural education.`,
-  },
-  {
-    name: "Qian Liu",
-    title: "Marketing Chair",
-    photo: member5,
-    description: `Qian received her B.A. degree from Barnard College of Columbia University, majoring in Comparative Literature and Psychology. She also held a master degree in Humanities from University of Chicago, with a concentration on East Asian and Comparative Literature. She is an educational consultant and co-founder of Essayer LLC.`,
-  },
-  {
-    name: "Yiting Ouyang",
-    title: "Operation Chair",
-    photo: member6,
-    description: `I am a current Harvard Master of Education candidate, specializing in Learning Design, Innovation, and Technology. With a foundation in Psychology and Education, I also serve as a tutor at USYD and was affiliated with UMSU at UniMelb. Additionally, I've led activities at the Capable Teens summer camp for over 5 years.`,
-  },
-  {
-    name: "Charlie Chenyu Zhang",
-    title: "Sponsorship Chair",
-    photo: member7,
-    description: `Charlie has four years of experience working as a software engineer and two years of teaching experience in Computer Science. He is currently the founder of a startup called GPTs.School, which aims to bring about an educational renaissance using emerging technologies such as AR/VR and generative AI.`,
-  },
-  {
-    name: "Zaher Ibrahim",
-    title: "Public Relationship Deputy Chair",
-    photo: member8,
-    description: `
-    <ul>
-    <li>Your current school and program: Sloan Fellows MBA at MIT</li>
-    <li>Two of your most highlighted personal/work experiences: Regional Director of Leadership Circle, Leadium Coaching and Consulting</li>
-    <li>A one-sentence personal slogan: Show Up, Grow Up, Step Up</li>
+    <li>Currently studying Educational Leadership, Organizations, and Entrepreneurship at Harvard University.</li>
+    <li>Founder of CupHalfFull Education Consulting.</li>
+    <li>Core member of the Harvard China Education Forum and the HGSE China Alumni Club (HACC).</li>
     </ul>
     `,
   },
@@ -274,13 +222,25 @@ const teamMembers = [
     name: "Swati Garg",
     title: "Treasurer Chair",
     photo: member9,
-    description: `With over 16 years of technology leadership experience across global markets and a current focus on an MBA at MIT Sloan, I am uniquely qualified to lead a startup. My tenure as Director of Engineering at WorkSpan and Senior Engineering Manager at Mentor Graphics showcases my ability to drive significant product quality improvements and revenue growth. My deep technical expertise, coupled with a strategic outlook honed through hands-on involvement in AI, Operations Management, and Financial Management, positions me perfectly to found and scale a startup, especially in innovative tech sectors.`,
+    description: `
+    <ul>
+    <li>MBA from MIT Sloan School of Management.</li>
+    <li>Co-founder of Leadium AI coaching and consulting, Director of Tech Department at WorkSpan Tech.</li>
+    <li>Senior Tech Manager at Mentor Graphics.</li>
+    </ul>
+    `,
   },
   {
-    name: "Connie Guo",
-    title: "Relationship Deputy Chair",
-    photo: member11,
-    description: `I'm Connie, a Harvard Education Leadership, Organizations, and Entrepreneurship master's graduate. As founder of Ed Pathways Consulting, I lead a team, creating 400+ education podcasts with 60K+ fans. A USC graduate in Public Relations and Law, I bring diverse experience in research from Columbia University and global marketing from 4A advertising companies.`,
+    name: "Rainy Mao",
+    title: "Secretary Chair",
+    photo: member4,
+    description: `
+    <ul>
+    <li>Currently studying for a Master's in Human Development and Education at Harvard University.</li>
+    <li>Art Instructor at the Child Development Center, University of California, San Diego.</li>
+    <li>Youth Development Counselor at Groundwork San Diego.</li>
+    </ul>
+    `,
   },
   {
     name: "Haoran Wu",
@@ -288,10 +248,44 @@ const teamMembers = [
     photo: member12,
     description: `
     <ul>
-    <li>Founder | External Deputy Vice President</li>
-    <li>Stanford Graduate School of Education </li>
-    <li>Vice President of U8 World Summit </li>
-    <li>Vice President of Stanford China Students and Scholars Association</li>
+    <li>Dual Master's in International Education Policy from Stanford University and Development Economics from Oxford University.</li>
+    <li>Chief of Staff at Intelipro, responsible for group investment and major client relations.</li>
+    <li>Co-founder of Stanford China Education Practice and Innovators Association (EPIC), Vice Chairman of U8 Global Elite Alliance, Project Lead for SVLC U30 at Silicon Valley Leadership Community.</li>
+    </ul>
+    `,
+  },
+  {
+    name: "Zaher Ibrahim",
+    title: "Public Relationship Dept. Chair",
+    photo: member8,
+    description: `
+    <ul>
+    <li>MBA from MIT Sloan School of Management.</li>
+    <li>Co-founder of Leadium AI coaching and consulting.</li>
+    <li>Regional Director at Leadership Circle.</li>
+    </ul>
+    `,
+  },
+  {
+    name: "Connie Guo",
+    title: "Internal Relationship Dept. Chair",
+    photo: member11,
+    description: `
+    <ul>
+    <li>Master's in Educational Leadership, Organizations, and Entrepreneurship from Harvard University.</li>
+    <li>Founder of Ed Pathways Consulting, with over 60,000 followers.</li>
+    <li>Research Assistant at Columbia University.</li>
+    </ul>
+    `,
+  },
+  {
+    name: "Charlie Chenyu Zhang",
+    title: "Sponsorship Chair",
+    photo: member7,
+    description: `
+    <ul>
+    <li>Bachelor's in Computer Mathematics and Data Science from the University of Toronto.</li>
+    <li>Founder & President of GPTs.School, leading education renaissance with AR/VR and AI.</li>
     </ul>
     `,
   },
@@ -299,7 +293,72 @@ const teamMembers = [
     name: "Julie Liu",
     title: "Alumni Relationship Chair",
     photo: member13,
-    description: `As a master's student in Human Development and Education at HGSE, I am currently interning at the Harvard Center on the Developing Child, focusing on program management and evaluation. Holding a Bachelor's Degree in Psychology from NYU, my professional experience includes working as a Behavioral Interventionist for children with Autism and ADHD and serving as an Educational Consultant in Shanghai for two years.`,
+    description: `
+    <ul>
+    <li>Currently studying Human Development and Education at Harvard University.</li>
+    <li>Specialist in behavioral intervention for children with Autism and ADHD.</li>
+    <li>Research Intern at the Harvard Child Development Center.</li>
+    </ul>
+    `,
+  },
+  {
+    name: "Zichen Sheng",
+    title: "Alumni Relationship Chair",
+    photo: member14,
+    description: `
+    <ul>
+    <li>Master's in Educational Leadership, Organizations, and Entrepreneurship from Harvard University.</li>
+    <li>Co-founder of RDEC, a pioneer in digital music education, leading the expansion to over 500 campuses, impacting over 100,000 children.</li>
+    </ul>
+    `,
+  },
+  {
+    name: "William Feng",
+    title: "Internal Deputy Vice President",
+    photo: member3,
+    description: `
+    <ul>
+    <li>Currently studying Educational Leadership, Organizations, and Entrepreneurship at Harvard University.</li>
+    <li>Author of books on Chinese education, partner in K12 social science education and higher education consulting firm, reality show contestant in "The Strongest Brain", "The Wonderful World of Chinese Characters", and popular contestant in "Idiom World"; interviewed by "China Youth Daily".</li>
+    <li>Vice-Chair of the Harvard Graduate Consulting Club.</li>
+    </ul>
+    `,
+  },
+  {
+    name: "Suna Sun",
+    title: "Marketing and Branding Chair",
+    photo: member2,
+    description: `
+    <ul>
+      <li>Currently studying Education Design Innovation and Technology at Harvard University.</li>
+      <li>Social media blogger with over ten million views across platforms.</li>
+      <li>Former intern at Coca-Cola and Tencent Marketing Department.</li>
+    </ul>
+    `,
+  },
+  {
+    name: "Qian Liu",
+    title: "Marketing and Communication Chair",
+    photo: member5,
+    description: `
+    <ul>
+    <li>Master's in Humanities and Arts from the University of Chicago.</li>
+    <li>Co-founder & Writing Expert at Essayer LLC.</li>
+    <li>Consulting Advisor at PrepEdu Consulting LLC.</li>
+    </ul>
+    `,
+  },
+  {
+    name: "Yiting Ouyang",
+    title: "Operation and Events Chair",
+    photo: member6,
+    description: `
+    <ul>
+    <li>Currently studying Education Design Innovation and Technology at Harvard University.</li>
+    <li>Counselor at USYD (United States Youth Development Association).</li>
+    <li>Has served for five consecutive years as the Department Head of Activities for the "Capable Youth" summer camp.</li>
+    </ul>
+    `,
   },
 ];
 
@@ -335,7 +394,7 @@ const modalStyle = {
 };
 
 const CardMediaComponent = styled(CardMedia)`
-  height: 350px;
+  height: 300px;
 `;
 
 const TeamMemberModal = ({ member, open, handleClose, isAdvisory = false }) => {
@@ -363,6 +422,33 @@ const TeamPage = () => {
   const [selectedMember, setSelectedMember] = useState(null);
   const [modalOpen, setModalOpen] = useState(false);
 
+  // const adjustCardHeight = () => {
+  //   // Select all elements with the CardHover class
+  //   const cards = document.querySelectorAll(".member-card");
+  //   let maxHeight = 0;
+
+  //   // Find the tallest card
+  //   cards.forEach((card) => {
+  //     if (card.offsetHeight > maxHeight) {
+  //       maxHeight = card.offsetHeight;
+  //     }
+  //   });
+
+  //   // Set all cards to the tallest height
+  //   cards.forEach((card) => {
+  //     card.style.height = `${maxHeight}px`;
+  //   });
+  // };
+
+  // useEffect(() => {
+  //   // Adjust card height after initial render
+  //   adjustCardHeight();
+
+  //   // Re-adjust on window resize for responsiveness
+  //   window.addEventListener("resize", adjustCardHeight);
+  //   return () => window.removeEventListener("resize", adjustCardHeight);
+  // }, []);
+
   const handleCardClick = (member) => {
     setSelectedMember(member);
     setModalOpen(true);
@@ -381,7 +467,10 @@ const TeamPage = () => {
         <Grid container spacing={5}>
           {teamMembers.map((member, idx) => (
             <Grid item xs={12} sm={6} md={4} lg={3} xl={2} key={idx}>
-              <CardHover onClick={() => handleCardClick(member)}>
+              <CardHover
+                onClick={() => handleCardClick(member)}
+                className="member-card"
+              >
                 <CardMediaComponent
                   component="img"
                   image={member.photo}
@@ -411,7 +500,10 @@ const TeamPage = () => {
         <Grid container spacing={5}>
           {advisoryMembers.map((member, idx) => (
             <Grid item xs={12} sm={6} md={4} lg={3} xl={2} key={idx}>
-              <CardHover onClick={() => handleCardClick(member)}>
+              <CardHover
+                onClick={() => handleCardClick(member)}
+                className="member-card"
+              >
                 <CardMediaComponent
                   component="img"
                   image={member.photo}
