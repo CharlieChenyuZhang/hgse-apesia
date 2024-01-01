@@ -422,33 +422,6 @@ const TeamPage = () => {
   const [selectedMember, setSelectedMember] = useState(null);
   const [modalOpen, setModalOpen] = useState(false);
 
-  // const adjustCardHeight = () => {
-  //   // Select all elements with the CardHover class
-  //   const cards = document.querySelectorAll(".member-card");
-  //   let maxHeight = 0;
-
-  //   // Find the tallest card
-  //   cards.forEach((card) => {
-  //     if (card.offsetHeight > maxHeight) {
-  //       maxHeight = card.offsetHeight;
-  //     }
-  //   });
-
-  //   // Set all cards to the tallest height
-  //   cards.forEach((card) => {
-  //     card.style.height = `${maxHeight}px`;
-  //   });
-  // };
-
-  // useEffect(() => {
-  //   // Adjust card height after initial render
-  //   adjustCardHeight();
-
-  //   // Re-adjust on window resize for responsiveness
-  //   window.addEventListener("resize", adjustCardHeight);
-  //   return () => window.removeEventListener("resize", adjustCardHeight);
-  // }, []);
-
   const handleCardClick = (member) => {
     setSelectedMember(member);
     setModalOpen(true);

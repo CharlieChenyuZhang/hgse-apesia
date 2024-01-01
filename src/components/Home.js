@@ -31,10 +31,10 @@ const Overlay = styled.div`
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5); // Semi-transparent grey overlay
+  background: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
-  align-items: center; // Center text vertically
+  align-items: center;
 `;
 
 const ResponsiveTypography = styled(Typography)`
@@ -48,7 +48,7 @@ const ResponsiveTypography = styled(Typography)`
     &:after {
       content: "HGSE APESIA";
     }
-    > span {
+    > b {
       display: none;
     }
   }
@@ -75,7 +75,7 @@ const ImageContainer = styled.div`
   }
 
   @media (max-width: ${BREAK_POINT}) {
-    display: none; // Hide the image on mobile devices
+    display: none;
   }
 `;
 
