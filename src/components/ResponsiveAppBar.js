@@ -20,10 +20,10 @@ const pages = [
   "TEAM",
   // "ALUMNI",
   // "CONSTITUTION",
+  "HIRING",
   "EVENTS",
   // "SPONSORS",
 ];
-const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);

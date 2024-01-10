@@ -9,6 +9,7 @@ import Schedule from "./components/Schedule";
 import Alumni from "./components/Alumni";
 import Events from "./components/Events";
 import Sponsors from "./components/Sponsors";
+import Hiring from "./components/Hiring";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
   {
     path: "/sponsor",
     element: <Sponsors />,
+  },
+  {
+    path: "/hiring",
+    element: <Hiring />,
   },
   {
     path: "/",
