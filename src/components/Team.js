@@ -363,7 +363,7 @@ const teamMembers = [
 ];
 
 const ContentContainer = styled.div`
-  margin-top: 83px;
+  margin-top: 70px;
   margin-left: 60px;
   margin-right: 60px;
 `;

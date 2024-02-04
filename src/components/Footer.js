@@ -44,7 +44,7 @@ const Footer = () => {
 
       <BottomImageTextContainer>
         <BottomImageContainer>
-          <img src={apesiaLogo} alt="APESIA logo" />
+          <img src={apesiaLogo} alt="APESIA logo" style={{ height: "80px" }} />
         </BottomImageContainer>
 
         <BottomTextContainer>

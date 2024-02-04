@@ -16,7 +16,7 @@ const MainContainer = styled.div`
 const ImageOverlayContainer = styled.div`
   position: relative;
   text-align: center;
-  margin-top: 83px;
+  margin-top: 70px;
 `;
 
 const ImageWithOverlay = styled.img`

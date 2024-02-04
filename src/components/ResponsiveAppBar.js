@@ -11,6 +11,7 @@ import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import apesiaLogo from "../assets/apesia-logo.png";
 import { useNavigate } from "react-router-dom";
+import styled from "styled-components";
 
 // NOTE: for the commented out tabs, the compoennts are ready
 const pages = [
@@ -53,11 +54,21 @@ function ResponsiveAppBar() {
   return (
     <AppBar
       position="static"
-      style={{ background: "#FFFBF4", top: 0, position: "fixed", zIndex: 1 }}
+      style={{
+        background: "#FFFBF4",
+        top: 0,
+        position: "fixed",
+        zIndex: 1,
+        height: "68px",
+      }}
     >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <img src={apesiaLogo} alt="APESIA logo" />
+          <img
+            src={apesiaLogo}
+            alt="APESIA logo"
+            style={{ height: "50px", marginRight: "15px", marginLeft: "15px" }}
+          />
           <Typography
             variant="h6"
             noWrap
@@ -82,7 +93,7 @@ function ResponsiveAppBar() {
               aria-controls="menu-appbar"
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
-              color="inherit"
+              color="black"
             >
               <MenuIcon />
             </IconButton>
