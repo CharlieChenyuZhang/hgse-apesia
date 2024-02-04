@@ -53,7 +53,7 @@ function ResponsiveAppBar() {
   return (
     <AppBar
       position="static"
-      style={{ background: "black", top: 0, position: "fixed", zIndex: 1 }}
+      style={{ background: "#FFFBF4", top: 0, position: "fixed", zIndex: 1 }}
     >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
@@ -65,10 +65,10 @@ function ResponsiveAppBar() {
               mr: 2,
               display: { xs: "none", md: "flex" },
               // fontFamily: "monospace",
-              // fontFamily: "Block Gothic",
-              // fontWeight: 700,
+              fontFamily: "math",
+              // fontWeight: 600,
               // letterSpacing: ".3rem",
-              color: "inherit",
+              color: "black",
               textDecoration: "none",
             }}
           >
@@ -116,7 +116,12 @@ function ResponsiveAppBar() {
               <Button
                 key={page}
                 onClick={() => handleNavClick(page)}
-                sx={{ my: 2, color: "white", display: "block" }}
+                sx={{
+                  my: 2,
+                  color: "black",
+                  display: "block",
+                  fontWeight: 700,
+                }}
               >
                 {page}
               </Button>
