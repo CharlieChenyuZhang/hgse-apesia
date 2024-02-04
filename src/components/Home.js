@@ -103,7 +103,7 @@ export default function Home() {
         <ImageWithOverlay src={hgseBuilding} alt="harvard building" />
         <Overlay>
           <ResponsiveTypography
-            variant="h1"
+            variant="h3"
             component="div"
             sx={{
               mr: 2,

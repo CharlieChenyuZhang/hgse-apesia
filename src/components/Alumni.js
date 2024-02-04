@@ -19,6 +19,9 @@ import alumni4 from "../assets/alumni/4.png";
 import alumni5 from "../assets/alumni/5.png";
 import alumni6 from "../assets/alumni/6.png";
 import alumni7 from "../assets/alumni/7.png";
+import alumni8 from "../assets/teams/15.png";
+import alumni9 from "../assets/teams/12.png";
+import alumni10 from "../assets/teams/14.png";
 
 const BREAK_POINT = "1200px";
 
@@ -29,7 +32,20 @@ const MainContainer = styled.div`
 
 const alumni = [
   {
+    name: "Anthemius Li",
+    title: "President",
+    photo: alumni8,
+    description: `
+      <ul>
+      <li>Master's in Educational Leadership, Organizations, and Entrepreneurship from Harvard University.</li>
+      <li>Founder of Lingfeng Century Education Family Office.</li>
+      <li>Executive Director of the Asia-Pacific Young Entrepreneurs Council and Chair of the International Education Committee, Advisor to the Harvard Political Economy Association, Vice-Chair of the Harvard Business and Entrepreneurship Alliance, Entrepreneur-in-Residence at the Harvard Innovation Lab.</li>
+      </ul>
+      `,
+  },
+  {
     name: "Gulnaz Kordanova",
+    title: "Vice President",
     photo: alumni0,
     description: `
     <ul>
@@ -42,6 +58,7 @@ const alumni = [
   },
   {
     name: "​Jojo Wang",
+    title: "Vice President",
     photo: alumni1,
     description: `
     <ul>
@@ -52,6 +69,7 @@ const alumni = [
   },
   {
     name: "Serena Zhang",
+    title: "Public Relationship Chair",
     photo: alumni2,
     description: `
     Harvard Kennedy School 
@@ -59,6 +77,7 @@ const alumni = [
   },
   {
     name: "Sona Das",
+    title: "India Head",
     photo: alumni3,
     description: `
     <ul>
@@ -69,6 +88,7 @@ const alumni = [
   },
   {
     name: "Alice Cao",
+    title: "Co-President",
     photo: alumni4,
     description: `    
     Harvard Graduate School of Education
@@ -76,6 +96,7 @@ const alumni = [
   },
   {
     name: "Junhan Zhang",
+    title: "Public Relationship Chair",
     photo: alumni5,
     description: `    
     Northeastern University, School of Public Policy and Urban Affairs
@@ -83,6 +104,7 @@ const alumni = [
   },
   {
     name: "Yan Liang",
+    title: "Secretary",
     photo: alumni6,
     description: `    
     Harvard Graduate School of Education 
@@ -90,9 +112,33 @@ const alumni = [
   },
   {
     name: "Wei Chen",
+    title: "Secretary",
     photo: alumni7,
     description: `    
     Harvard Graduate School of Education 
+    `,
+  },
+  {
+    name: "Haoran Wu",
+    title: "External Deputy Vice President",
+    photo: alumni9,
+    description: `
+    <ul>
+    <li>Dual Master's in International Education Policy from Stanford University and Development Economics from Oxford University.</li>
+    <li>Chief of Staff at Intelipro, responsible for group investment and major client relations.</li>
+    <li>Co-founder of Stanford China Education Practice and Innovators Association (EPIC), Vice Chairman of U8 Global Elite Alliance, Project Lead for SVLC U30 at Silicon Valley Leadership Community.</li>
+    </ul>
+    `,
+  },
+  {
+    name: "Zichen Sheng",
+    title: "Internal Deputy Vice President",
+    photo: alumni10,
+    description: `
+    <ul>
+    <li>Master's in Educational Leadership, Organizations, and Entrepreneurship from Harvard University.</li>
+    <li>Co-founder of RDEC, a pioneer in digital music education, leading the expansion to over 500 campuses, impacting over 100,000 children.</li>
+    </ul>
     `,
   },
 ];
@@ -107,6 +153,12 @@ const PageTitle = styled.div`
   font-size: 2rem;
   font-weight: bold;
   padding: 5rem 0;
+`;
+
+const SecondaryPageTitle = styled.div`
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 1rem 0;
 `;
 
 const CardHover = styled(Card)`
@@ -172,6 +224,7 @@ const TeamPage = () => {
       <ResponsiveApBar />
       <ContentContainer>
         <PageTitle>Alumni</PageTitle>
+        <SecondaryPageTitle>E-Board Members 2023 - 2024</SecondaryPageTitle>
         <Grid container spacing={5}>
           {alumni.map((member, idx) => (
             <Grid item xs={12} sm={6} md={4} lg={3} xl={2} key={idx}>

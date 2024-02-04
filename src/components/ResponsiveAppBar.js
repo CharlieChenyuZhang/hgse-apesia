@@ -18,7 +18,7 @@ const pages = [
   // "SPEAKERS",
   // "SCHEDULE",
   "TEAM",
-  // "ALUMNI",
+  "ALUMNI",
   // "CONSTITUTION",
   "HIRING",
   "EVENTS",
@@ -61,19 +61,18 @@ function ResponsiveAppBar() {
           <Typography
             variant="h6"
             noWrap
-            component="a"
-            href="/"
             sx={{
               mr: 2,
               display: { xs: "none", md: "flex" },
-              fontFamily: "monospace",
-              fontWeight: 700,
-              letterSpacing: ".3rem",
+              // fontFamily: "monospace",
+              // fontFamily: "Block Gothic",
+              // fontWeight: 700,
+              // letterSpacing: ".3rem",
               color: "inherit",
               textDecoration: "none",
             }}
           >
-            APESIA
+            Harvard GSE APESIA
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
