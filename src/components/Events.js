@@ -8,12 +8,12 @@ import TimelineSeparator from "@mui/lab/TimelineSeparator";
 import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
-import event1 from "../assets/events/apesiaevent-1.webp";
-import event2 from "../assets/events/apesiaevent-2.webp";
-import event3 from "../assets/events/apesiaevent-3.webp";
-import event4 from "../assets/events/apesiaevent-4.webp";
-import event5 from "../assets/events/apesiaevent-5.webp";
-import event6 from "../assets/events/apesiaevent-6.webp";
+import event1 from "../assets/events/apesiaevent-1.png";
+import event2 from "../assets/events/apesiaevent-2.png";
+import event3 from "../assets/events/apesiaevent-3.png";
+import event4 from "../assets/events/apesiaevent-4.png";
+import event5 from "../assets/events/apesiaevent-5.png";
+import event6 from "../assets/events/apesiaevent-6.png";
 
 const BREAK_POINT = "1200px";
 
