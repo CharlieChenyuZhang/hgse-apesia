@@ -22,6 +22,7 @@ import alumni7 from "../assets/alumni/7.png";
 import alumni8 from "../assets/teams/15.png";
 import alumni9 from "../assets/teams/12.png";
 import alumni10 from "../assets/teams/14.png";
+import Header from "./Header";
 
 const BREAK_POINT = "1200px";
 
@@ -158,7 +159,7 @@ const PageTitle = styled.div`
 const SecondaryPageTitle = styled.div`
   font-size: 1.5rem;
   font-weight: bold;
-  padding: 1rem 0;
+  padding: 2rem 0;
 `;
 
 const CardHover = styled(Card)`
@@ -223,7 +224,7 @@ const TeamPage = () => {
     <MainContainer>
       <ResponsiveApBar />
       <ContentContainer>
-        <PageTitle>Alumni</PageTitle>
+        <Header name={"Alumni"} />
         <SecondaryPageTitle>E-Board Members 2023 - 2024</SecondaryPageTitle>
         <Grid container spacing={5}>
           {alumni.map((member, idx) => (

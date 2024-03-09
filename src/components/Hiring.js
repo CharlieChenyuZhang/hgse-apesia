@@ -9,6 +9,7 @@ import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
+import Header from "./Header";
 
 const BREAK_POINT = "1200px";
 
@@ -62,6 +63,7 @@ const Hiring = () => {
     <MainContainer>
       <ResponsiveApBar />
       <ContentContainer>
+        <Header name={"Hiring"} />
         <PageTitle>APESIA has started recruiting!</PageTitle>
         <b>Recruiting Population:</b>
         <br />

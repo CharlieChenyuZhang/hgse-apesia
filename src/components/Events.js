@@ -14,6 +14,7 @@ import event3 from "../assets/events/apesiaevent-3.png";
 import event4 from "../assets/events/apesiaevent-4.png";
 import event5 from "../assets/events/apesiaevent-5.png";
 import event6 from "../assets/events/apesiaevent-6.png";
+import Header from "./Header";
 
 const BREAK_POINT = "1200px";
 
@@ -28,9 +29,7 @@ const ContentContainer = styled.div`
   margin-right: 60px;
 `;
 
-const PageTitle = styled.div`
-  font-size: 2rem;
-  font-weight: bold;
+const Spacer = styled.div`
   padding: 5rem 0;
 `;
 
@@ -48,7 +47,8 @@ const Events = () => {
     <MainContainer>
       <ResponsiveApBar />
       <ContentContainer>
-        <PageTitle>Events</PageTitle>
+        <Header name={"Events"} />
+        <Spacer />
 
         <Timeline position="alternate">
           <TimelineItem>

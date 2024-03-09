@@ -128,12 +128,13 @@ export default function Home() {
         </ImageContainer>
         <TextContainer>
           <HeaderContainer>
-            Harvard Graduate School of Education Asian Pacific Education
-            Students
+            Harvard Graduate School of Education
+            <br />
+            Asian Pacific Education Students International Association
           </HeaderContainer>
           <DescriptionContainer>
             The Harvard Graduate School of Education Asian Pacific Education
-            StudentsInternational Association (“APESIA”) exists to promote a
+            Students International Association (“APESIA”) exists to promote a
             greater understanding of Asian Pacific education culture, political
             and social dilemmas, to serve as a vehicle for Asian Pacific
             education ecosystem, and to serve as a support network for Asian

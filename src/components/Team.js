@@ -37,6 +37,7 @@ import advisor6 from "../assets/advisors/6.png";
 import advisor7 from "../assets/advisors/7.png";
 import advisor8 from "../assets/advisors/8.png";
 import advisor9 from "../assets/advisors/9.png";
+import Header from "./Header";
 
 const BREAK_POINT = "1200px";
 
@@ -435,8 +436,8 @@ const TeamPage = () => {
   return (
     <MainContainer>
       <ResponsiveApBar />
+      <Header name={"Meet the Team"} />
       <ContentContainer>
-        <PageTitle>Meet the Team</PageTitle>
         <Grid container spacing={5}>
           {teamMembers.map((member, idx) => (
             <Grid item xs={12} sm={6} md={4} lg={3} xl={2} key={idx}>
