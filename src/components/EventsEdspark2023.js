@@ -46,7 +46,7 @@ const EventImage = styled.img`
 const H2Header = styled.h2`
   font-size: 24px;
   color: #333;
-  margin-bottom: 20px;
+  margin: 20px 0;
 `;
 
 // SubH2Header
