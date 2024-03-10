@@ -39,16 +39,6 @@ const ResponsiveTypography = styled(Typography)`
   color: white;
   margin: 20px;
   text-align: center;
-
-  @media (max-width: ${BREAK_POINT}) {
-    font-size: 2rem;
-    &:after {
-      content: "HGSE APESIA";
-    }
-    > b {
-      display: none;
-    }
-  }
 `;
 
 export default function Header(props) {

@@ -37,10 +37,6 @@ const EventImage = styled.img`
   width: 100%;
   max-width: 800px;
   align-items: center;
-
-  @media (max-width: 1000px) {
-    display: none;
-  }
 `;
 
 const H2Header = styled.h2`

@@ -80,7 +80,7 @@ const Events = () => {
                 <EventImage src={event5} />
                 <Button
                   variant="contained"
-                  onClick={() => navigate("/events/edspark2023")}
+                  onClick={() => navigate("/edspark2023")}
                   sx={{
                     my: 2,
                     display: "block",

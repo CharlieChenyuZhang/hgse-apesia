@@ -40,7 +40,7 @@ const router = createBrowserRouter([
     element: <Events />,
   },
   {
-    path: "/events/edspark2023",
+    path: "/edspark2023",
     element: <EventsEdspark2023 />,
   },
   {
