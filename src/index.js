@@ -10,6 +10,7 @@ import Alumni from "./components/Alumni";
 import Events from "./components/Events";
 import Sponsors from "./components/Sponsors";
 import Hiring from "./components/Hiring";
+import EventsEdspark2023 from "./components/EventsEdspark2023";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
   {
     path: "/events",
     element: <Events />,
+  },
+  {
+    path: "/events/edspark2023",
+    element: <EventsEdspark2023 />,
   },
   {
     path: "/sponsor",

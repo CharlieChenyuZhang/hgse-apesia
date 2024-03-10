@@ -15,6 +15,8 @@ import event4 from "../assets/events/apesiaevent-4.png";
 import event5 from "../assets/events/apesiaevent-5.png";
 import event6 from "../assets/events/apesiaevent-6.png";
 import Header from "./Header";
+import Button from "@mui/material/Button";
+import { useNavigate } from "react-router-dom";
 
 const BREAK_POINT = "1200px";
 
@@ -43,6 +45,8 @@ const EventImage = styled.img`
 `;
 
 const Events = () => {
+  const navigate = useNavigate(); // Hook to get the navigate function
+
   return (
     <MainContainer>
       <ResponsiveApBar />
@@ -74,6 +78,18 @@ const Events = () => {
               Igniting the Next Big Idea in Education
               <div className="img-container">
                 <EventImage src={event5} />
+                <Button
+                  variant="contained"
+                  onClick={() => navigate("/events/edspark2023")}
+                  sx={{
+                    my: 2,
+                    display: "block",
+                    fontWeight: 700,
+                    marginLeft: "auto",
+                  }}
+                >
+                  {"Learn more"}
+                </Button>
               </div>
             </TimelineContent>
           </TimelineItem>
