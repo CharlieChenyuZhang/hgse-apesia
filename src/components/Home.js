@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import ResponsiveApBar from "./ResponsiveAppBar";
 import Typography from "@mui/material/Typography";
 import hgseBuilding from "../assets/hgse-building.png";
 import harvardBuilding from "../assets/harvard-building.png";
+import apesia2024PDF from "../assets/apesia2024.pdf";
 import Footer from "./Footer";
+// import { Document, Page, pdfjs } from "react-pdf";
+
+// pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 const BREAK_POINT = "1200px";
 
@@ -95,6 +99,26 @@ const DescriptionContainer = styled.div`
   margin-bottom: 1.5rem;
 `;
 
+const PdfViewContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+`;
+
+const PdfIframe = styled.iframe`
+  width: 80%; /* Default width for larger screens */
+  height: 800px; /* Default height */
+`;
+
+const PDFViewer = () => {
+  return (
+    <PdfViewContainer>
+      <PdfIframe src={apesia2024PDF} />
+    </PdfViewContainer>
+  );
+};
+
 export default function Home() {
   return (
     <MainContainer>
@@ -161,6 +185,7 @@ export default function Home() {
           </DescriptionContainer>
         </TextContainer>
       </ImageTextSection>
+      <PDFViewer />
       <Footer />
     </MainContainer>
   );
