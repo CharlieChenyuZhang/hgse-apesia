@@ -12,6 +12,7 @@ import Paper from "@mui/material/Paper";
 import Header from "./Header";
 import AboutLogo from "../assets/aboutus/about-logo.png";
 import AboutLogoMobile from "../assets/aboutus/about-logo-mobile.JPG";
+import constitutionPDF from "../assets/apesia-constitution.pdf";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
@@ -83,6 +84,10 @@ const AboutUs = () => {
       <ResponsiveApBar />
       <ContentContainer>
         <Header name={"About Us"} />
+        <PageTitle>Our Constitution</PageTitle>
+        <a href={constitutionPDF} target="_blank" rel="noopener noreferrer">
+          [Oct. 26. 2022] [Current] HGSE APESIA Constitution
+        </a>
         <PageTitle>Our Structure</PageTitle>
         <div>
           <Accordion>
