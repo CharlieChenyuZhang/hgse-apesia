@@ -10,6 +10,7 @@ import Alumni from "./components/Alumni";
 import Events from "./components/Events";
 import Sponsors from "./components/Sponsors";
 import Hiring from "./components/Hiring";
+import AboutUs from "./components/AboutUs";
 import EventsEdspark2023 from "./components/EventsEdspark2023";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
@@ -50,6 +51,10 @@ const router = createBrowserRouter([
   {
     path: "/hiring",
     element: <Hiring />,
+  },
+  {
+    path: "/about-us",
+    element: <AboutUs />,
   },
   {
     path: "/",

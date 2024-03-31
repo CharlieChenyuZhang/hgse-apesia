@@ -14,6 +14,8 @@ import event3 from "../assets/events/apesiaevent-3.png";
 import event4 from "../assets/events/apesiaevent-4.png";
 import event5 from "../assets/events/apesiaevent-5.png";
 import event6 from "../assets/events/apesiaevent-6.png";
+import pastSpeakers from "../assets/events/apesia-past-speakers.png";
+import pastPartnership from "../assets/events/apesia-past-partnership.png";
 import Header from "./Header";
 import Button from "@mui/material/Button";
 import { useNavigate } from "react-router-dom";
@@ -32,7 +34,7 @@ const ContentContainer = styled.div`
 `;
 
 const Spacer = styled.div`
-  padding: 5rem 0;
+  padding: 3rem 0;
 `;
 
 const EventImage = styled.img`
@@ -44,6 +46,10 @@ const EventImage = styled.img`
   }
 `;
 
+const StyledImage = styled.img`
+  width: 100%;
+`;
+
 const Events = () => {
   const navigate = useNavigate(); // Hook to get the navigate function
 
@@ -52,6 +58,14 @@ const Events = () => {
       <ResponsiveApBar />
       <ContentContainer>
         <Header name={"Events"} />
+
+        <Spacer />
+
+        <StyledImage
+          src={pastSpeakers}
+          alt="past global education forum speakers"
+        />
+
         <Spacer />
 
         <Timeline position="alternate">
@@ -145,6 +159,13 @@ const Events = () => {
             </TimelineContent>
           </TimelineItem>
         </Timeline>
+
+        <Spacer />
+
+        <StyledImage
+          src={pastPartnership}
+          alt="past global education forum speakers"
+        />
       </ContentContainer>
       <Footer />
     </MainContainer>

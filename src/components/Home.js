@@ -4,7 +4,6 @@ import ResponsiveApBar from "./ResponsiveAppBar";
 import Typography from "@mui/material/Typography";
 import hgseBuilding from "../assets/hgse-building.png";
 import harvardBuilding from "../assets/harvard-building.png";
-import apesia2024PDF from "../assets/apesia2024.pdf";
 import Footer from "./Footer";
 // import { Document, Page, pdfjs } from "react-pdf";
 
@@ -35,7 +34,7 @@ const Overlay = styled.div`
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.6);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -99,26 +98,6 @@ const DescriptionContainer = styled.div`
   margin-bottom: 1.5rem;
 `;
 
-const PdfViewContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-`;
-
-const PdfIframe = styled.iframe`
-  width: 80%; /* Default width for larger screens */
-  height: 800px; /* Default height */
-`;
-
-const PDFViewer = () => {
-  return (
-    <PdfViewContainer>
-      <PdfIframe src={apesia2024PDF} />
-    </PdfViewContainer>
-  );
-};
-
 export default function Home() {
   return (
     <MainContainer>
@@ -127,7 +106,7 @@ export default function Home() {
         <ImageWithOverlay src={hgseBuilding} alt="harvard building" />
         <Overlay>
           <ResponsiveTypography
-            variant="h3"
+            variant="h2"
             component="div"
             sx={{
               mr: 2,
@@ -139,8 +118,6 @@ export default function Home() {
               Harvard Graduate School of Education
               <br />
               Asian Pacific Education Student International Association
-              <br />
-              (HGSE APESIA)
             </b>
           </ResponsiveTypography>
         </Overlay>
@@ -183,9 +160,17 @@ export default function Home() {
             for education school students and creates a social and professional
             network to connect students and alumni worldwide.
           </DescriptionContainer>
+          <HeaderContainer>Our Vision</HeaderContainer>
+          <DescriptionContainer>
+            <ul>
+              <li>Enhancing the Accessibility and Quality of Education.</li>
+              <li>Promoting Equal Access to Educational Resources.</li>
+              <li>Breaking down Cultural and Language Barriers.</li>
+              <li>Reducing Education Inequality.</li>
+            </ul>
+          </DescriptionContainer>
         </TextContainer>
       </ImageTextSection>
-      <PDFViewer />
       <Footer />
     </MainContainer>
   );

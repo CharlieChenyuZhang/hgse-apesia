@@ -23,6 +23,7 @@ const pages = [
   // "CONSTITUTION",
   "HIRING",
   "EVENTS",
+  "ABOUT US",
   // "SPONSORS",
 ];
 
@@ -49,7 +50,7 @@ function ResponsiveAppBar() {
       navigate(`/`);
       return;
     }
-    navigate(`/${page.toLowerCase()}`);
+    navigate(`/${page.toLowerCase().replace(" ", "-")}`);
   };
   return (
     <AppBar
