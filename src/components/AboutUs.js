@@ -73,7 +73,7 @@ const AboutUs = () => {
 
     return (
       <AboutLogoContainer isDesktop={isDesktop}>
-        {!isDesktop && <PageTitle>About Logo</PageTitle>}
+        {/* {!isDesktop && <PageTitle>About Logo</PageTitle>} */}
         <LogoIntro src={imageSrc} alt={alt} />
       </AboutLogoContainer>
     );
@@ -313,8 +313,23 @@ const AboutUs = () => {
               </Typography>
             </AccordionDetails>
           </Accordion>
+          <Accordion>
+            <AccordionSummary
+              expandIcon={<ArrowDropDownIcon />}
+              aria-controls="panel2-content"
+              id="panel2-header"
+            >
+              <Typography>Our Logo Design</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <ResponsiveImage alt="About Us Logo" />
+            </AccordionDetails>
+          </Accordion>
+          <br />
+          <br />
+          <br />
+          <br />
         </div>
-        <ResponsiveImage alt="About Us Logo" />
       </ContentContainer>
       <Footer />
     </MainContainer>

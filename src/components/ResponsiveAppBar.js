@@ -16,14 +16,14 @@ import styled from "styled-components";
 // NOTE: for the commented out tabs, the compoennts are ready
 const pages = [
   "HOME",
-  // "SPEAKERS",
-  // "SCHEDULE",
+  "ABOUT US",
   "TEAM",
   "ALUMNI",
-  // "CONSTITUTION",
   "HIRING",
   "EVENTS",
-  "ABOUT US",
+  // "SPEAKERS",
+  // "SCHEDULE",
+  // "CONSTITUTION",
   // "SPONSORS",
 ];
 
