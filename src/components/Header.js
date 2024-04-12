@@ -50,7 +50,7 @@ export default function Header(props) {
           autoPlay
           loop
           muted
-          style={{ width: "100%", height: "300px", objectFit: "cover" }}
+          style={{ width: "100%", height: "400px", objectFit: "cover" }}
         >
           <source src={backgroundVideo} type="video/mp4" />
           Your browser does not support the video tag.
