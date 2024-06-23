@@ -2,5 +2,6 @@ A mobile responsive site for HGSE APESIA.
 
 Can access it at https://apesia.org/
 
-<img width="1727" alt="Screenshot 2023-12-25 at 2 56 06 PM" src="https://github.com/CharlieChenyuZhang/hgse-apesia/assets/22360911/b3e1a0ad-5d42-4c8e-8602-96648eb0a1e6">
+
+<img width="1724" alt="Screenshot 2024-06-22 at 8 10 10 PM" src="https://github.com/CharlieChenyuZhang/hgse-apesia/assets/22360911/89bf2a06-11af-4504-85d8-5030a830342e">
 
