@@ -1,3 +1,8 @@
+# how to run
+npm ci 
+npm start
+
+# description
 A mobile responsive site for HGSE APESIA. 
 
 Can access it at https://apesia.org/
